@@ -9,7 +9,12 @@ function asignarTextoElemento(elemento, texto) {
 }
 
 function verificarIntento() {
-    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value)
+    console.log (typeof(numeroSecreto));
+    console.log (typeof(numeroDeUsuario));
+    console.log (numeroSecreto);
+    console.log (numeroSecreto==numeroDeUsuario);
+        return;
     
     if (numeroDeUsuario === numeroSecreto) {
         asignarTextoElemento('p',`Acertaste el número en ${intentos} ${(intentos === 1) ? 'vez' : 'veces'}`);
@@ -33,7 +38,7 @@ function limpiarCaja() {
 
 function generarNumeroSecreto() {
     return Math.floor(Math.random()*10)+1;
-
+//ejecuta el número ramdomico por 10 por la secuencia de 0 a 10, es el parametro que esta sujeto el entero.
 }
 
 function condicionesIniciales() {
@@ -57,3 +62,4 @@ function reiniciarJuego() {
 }
 
 condicionesIniciales();
+
