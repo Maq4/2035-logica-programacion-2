@@ -13,7 +13,8 @@ function verificarIntento() {
     console.log (typeof(numeroSecreto));
     console.log (typeof(numeroDeUsuario));
     console.log (numeroSecreto);
-    console.log (numeroSecreto==numeroDeUsuario);
+    //el signo de tipo igual triple en para comparar que sea en cantidad y tipo de valor.
+    console.log (numeroSecreto===numeroDeUsuario);
         return;
     
     if (numeroDeUsuario === numeroSecreto) {
@@ -62,4 +63,5 @@ function reiniciarJuego() {
 }
 
 condicionesIniciales();
+
 
