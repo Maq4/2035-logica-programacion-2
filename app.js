@@ -32,7 +32,7 @@ function verificarIntento() {
     }
     return;
 }
-
+//funcion limpiar los datos ingresados si no acerto.
 function limpiarCaja() {
     document.querySelector('#valorUsuario').value = '';
 }
@@ -63,5 +63,6 @@ function reiniciarJuego() {
 }
 
 condicionesIniciales();
+
 
 
