@@ -41,7 +41,7 @@ function generarNumeroSecreto() {
     return Math.floor(Math.random()*10)+1;
 //ejecuta el número ramdomico por 10 por la secuencia de 0 a 10, es el parametro que esta sujeto el entero.
 }
-
+// agrupa como funcion los primeros mensajes del código
 function condicionesIniciales() {
     asignarTextoElemento('h1','Juego del número secreto!');
     asignarTextoElemento('p',`Indica un número del 1 al 10`);
@@ -63,6 +63,7 @@ function reiniciarJuego() {
 }
 
 condicionesIniciales();
+
 
 
 
